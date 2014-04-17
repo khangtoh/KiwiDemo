@@ -22,6 +22,7 @@
 		911E8B8C18FF76F5004E1658 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 911E8B6B18FF76F5004E1658 /* UIKit.framework */; };
 		911E8B9418FF76F5004E1658 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 911E8B9218FF76F5004E1658 /* InfoPlist.strings */; };
 		911E8B9618FF76F5004E1658 /* KiwiDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 911E8B9518FF76F5004E1658 /* KiwiDemoTests.m */; };
+		911E8BA118FF7982004E1658 /* PCContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 911E8BA018FF7982004E1658 /* PCContent.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,8 @@
 		911E8B9118FF76F5004E1658 /* KiwiDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KiwiDemoTests-Info.plist"; sourceTree = "<group>"; };
 		911E8B9318FF76F5004E1658 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		911E8B9518FF76F5004E1658 /* KiwiDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KiwiDemoTests.m; sourceTree = "<group>"; };
+		911E8B9F18FF7982004E1658 /* PCContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCContent.h; sourceTree = "<group>"; };
+		911E8BA018FF7982004E1658 /* PCContent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCContent.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +123,8 @@
 				911E8B7C18FF76F5004E1658 /* Main_iPad.storyboard */,
 				911E8B7F18FF76F5004E1658 /* ViewController.h */,
 				911E8B8018FF76F5004E1658 /* ViewController.m */,
+				911E8B9F18FF7982004E1658 /* PCContent.h */,
+				911E8BA018FF7982004E1658 /* PCContent.m */,
 				911E8B8218FF76F5004E1658 /* Images.xcassets */,
 				911E8B6E18FF76F5004E1658 /* Supporting Files */,
 			);
@@ -253,6 +258,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				911E8BA118FF7982004E1658 /* PCContent.m in Sources */,
 				911E8B8118FF76F5004E1658 /* ViewController.m in Sources */,
 				911E8B7818FF76F5004E1658 /* AppDelegate.m in Sources */,
 				911E8B7418FF76F5004E1658 /* main.m in Sources */,
@@ -470,6 +476,7 @@
 				911E8B9B18FF76F5004E1658 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		911E8B9C18FF76F5004E1658 /* Build configuration list for PBXNativeTarget "KiwiDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -478,6 +485,7 @@
 				911E8B9E18FF76F5004E1658 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
