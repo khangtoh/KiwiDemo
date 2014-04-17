@@ -11,13 +11,33 @@
 
 SPEC_BEGIN(PCContentSpec)
 describe(@"PCContent", ^{
+    
     context(@"when score is 100", ^{
-        it(@"should be awesome", ^{
         
-            PCContent *content = [[PCContent alloc] initWithScore:100];
+        let(content, ^id{
+            return [[PCContent alloc] initWithScore:100];
+        });
+        
+        it(@"should be awesome", ^{
+    
             [[[content description] should] containString:@"awesome"];
             
         });
     });
+    
+    context(@"when score is not 100", ^{
+        
+        let(content, ^id{
+            return [[PCContent alloc] initWithScore:99];
+        });
+        
+        it(@"should be awesome", ^{
+            
+            [[[content description] should] containString:@"almost awesome"];
+            
+        });
+        
+    });
+    
 });
 SPEC_END
