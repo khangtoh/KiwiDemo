@@ -37,4 +37,10 @@
 {
     return self.score >= 100 ? @"awesome" : @"almost awesome";
 }
+
+-(BOOL)meetSomeExpectation
+{
+    return YES;
+    
+}
 @end

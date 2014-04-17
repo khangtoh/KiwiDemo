@@ -11,5 +11,5 @@
 @interface PCContent : NSObject
 
 -(id)initWithScore:(NSInteger)score;
-
+-(BOOL)meetSomeExpectation;
 @end

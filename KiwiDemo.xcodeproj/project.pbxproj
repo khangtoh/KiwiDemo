@@ -23,6 +23,9 @@
 		911E8B9418FF76F5004E1658 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 911E8B9218FF76F5004E1658 /* InfoPlist.strings */; };
 		911E8B9618FF76F5004E1658 /* KiwiDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 911E8B9518FF76F5004E1658 /* KiwiDemoTests.m */; };
 		911E8BA118FF7982004E1658 /* PCContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 911E8BA018FF7982004E1658 /* PCContent.m */; };
+		911E8BA418FF9617004E1658 /* PCContentSpecs.m in Sources */ = {isa = PBXBuildFile; fileRef = 911E8BA318FF9617004E1658 /* PCContentSpecs.m */; };
+		911E8BAA18FF9B6D004E1658 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 911E8BA918FF9B6D004E1658 /* SenTestingKit.framework */; };
+		911E8BB018FFA5F4004E1658 /* libKiwi-XCTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 911E8BAF18FFA5F4004E1658 /* libKiwi-XCTest.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +61,11 @@
 		911E8B9518FF76F5004E1658 /* KiwiDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KiwiDemoTests.m; sourceTree = "<group>"; };
 		911E8B9F18FF7982004E1658 /* PCContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCContent.h; sourceTree = "<group>"; };
 		911E8BA018FF7982004E1658 /* PCContent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCContent.m; sourceTree = "<group>"; };
+		911E8BA318FF9617004E1658 /* PCContentSpecs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCContentSpecs.m; sourceTree = "<group>"; };
+		911E8BA518FF96AE004E1658 /* libKiwi-XCTest.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libKiwi-XCTest.a"; path = "../Kiwi/build/Debug-iphoneos/libKiwi-XCTest.a"; sourceTree = "<group>"; };
+		911E8BA718FF98AA004E1658 /* libKiwi.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libKiwi.a; path = "../../../../Library/Developer/Xcode/DerivedData/KiwiDemo-eumwnpzechoagecsslyrulecotfv/Build/Products/Debug-iphoneos/libKiwi.a"; sourceTree = "<group>"; };
+		911E8BA918FF9B6D004E1658 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		911E8BAF18FFA5F4004E1658 /* libKiwi-XCTest.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libKiwi-XCTest.a"; path = "../../../../Library/Developer/Xcode/DerivedData/KiwiDemo-eumwnpzechoagecsslyrulecotfv/Build/Products/Debug-iphoneos/libKiwi-XCTest.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +83,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				911E8BB018FFA5F4004E1658 /* libKiwi-XCTest.a in Frameworks */,
+				911E8BAA18FF9B6D004E1658 /* SenTestingKit.framework in Frameworks */,
 				911E8B8A18FF76F5004E1658 /* XCTest.framework in Frameworks */,
 				911E8B8C18FF76F5004E1658 /* UIKit.framework in Frameworks */,
 				911E8B8B18FF76F5004E1658 /* Foundation.framework in Frameworks */,
@@ -106,6 +116,10 @@
 		911E8B6618FF76F5004E1658 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				911E8BAF18FFA5F4004E1658 /* libKiwi-XCTest.a */,
+				911E8BA918FF9B6D004E1658 /* SenTestingKit.framework */,
+				911E8BA718FF98AA004E1658 /* libKiwi.a */,
+				911E8BA518FF96AE004E1658 /* libKiwi-XCTest.a */,
 				911E8B6718FF76F5004E1658 /* Foundation.framework */,
 				911E8B6918FF76F5004E1658 /* CoreGraphics.framework */,
 				911E8B6B18FF76F5004E1658 /* UIKit.framework */,
@@ -145,6 +159,7 @@
 		911E8B8F18FF76F5004E1658 /* KiwiDemoTests */ = {
 			isa = PBXGroup;
 			children = (
+				911E8BA218FF93CD004E1658 /* Specs */,
 				911E8B9518FF76F5004E1658 /* KiwiDemoTests.m */,
 				911E8B9018FF76F5004E1658 /* Supporting Files */,
 			);
@@ -158,6 +173,14 @@
 				911E8B9218FF76F5004E1658 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		911E8BA218FF93CD004E1658 /* Specs */ = {
+			isa = PBXGroup;
+			children = (
+				911E8BA318FF9617004E1658 /* PCContentSpecs.m */,
+			);
+			name = Specs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,6 +293,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				911E8B9618FF76F5004E1658 /* KiwiDemoTests.m in Sources */,
+				911E8BA418FF9617004E1658 /* PCContentSpecs.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,9 +456,25 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
 				INFOPLIST_FILE = "KiwiDemoTests/KiwiDemoTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/khangtoh/Projects/github/ios/Kiwi/build/Debug-iphoneos",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/KiwiDemo-eumwnpzechoagecsslyrulecotfv/Build/Products/Debug-iphoneos",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					XCTest,
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
+				USER_HEADER_SEARCH_PATHS = "/Users/khangtoh/Library/Developer/Xcode/DerivedData/KiwiDemo-eumwnpzechoagecsslyrulecotfv/Build/Products/Debug-iphoneuniversal/**";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Debug;
@@ -450,9 +490,25 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KiwiDemo/KiwiDemo-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
 				INFOPLIST_FILE = "KiwiDemoTests/KiwiDemoTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/khangtoh/Projects/github/ios/Kiwi/build/Debug-iphoneos",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/KiwiDemo-eumwnpzechoagecsslyrulecotfv/Build/Products/Debug-iphoneos",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					XCTest,
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
+				USER_HEADER_SEARCH_PATHS = "/Users/khangtoh/Library/Developer/Xcode/DerivedData/KiwiDemo-eumwnpzechoagecsslyrulecotfv/Build/Products/Debug-iphoneuniversal/**";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
