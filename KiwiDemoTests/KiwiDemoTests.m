@@ -27,9 +27,8 @@
     [super tearDown];
 }
 
-- (void)testExample
+- (void)testContentShouldBeAwesome  
 {
-    //XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
     PCContent *content = [[PCContent alloc] initWithScore:100];
     XCTAssertTrue([[content description] isEqualToString:@"awesome"], @"should be awesome");
     
