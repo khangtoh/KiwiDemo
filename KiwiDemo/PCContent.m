@@ -14,11 +14,20 @@
 @implementation PCContent
 -(id)initWithScore:(NSInteger)score
 {
+    if ([self init])
+    {
+        self.score = score;
+    }
+    return self;
+}
+
+-(id)init
+{
     self = [super init];
     
     if (self)
     {
-        self.score = score;
+        self.score = 0;
     }
     return self;
     

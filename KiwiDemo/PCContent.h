@@ -10,4 +10,6 @@
 
 @interface PCContent : NSObject
 
+-(id)initWithScore:(NSInteger)score;
+
 @end
