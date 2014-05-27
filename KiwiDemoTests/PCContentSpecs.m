@@ -25,13 +25,13 @@ describe(@"PCContent", ^{
         });
     });
     
-    context(@"when score is not 100", ^{
+    context(@"when score is < 100", ^{
         
         let(content, ^id{
-            return [[PCContent alloc] initWithScore:99];
+            return [[PCContent alloc] initWithScore:100];
         });
         
-        it(@"should be awesome", ^{
+        it(@"should be almost awesome", ^{
             
             [[[content description] should] containString:@"almost awesome"];
             
